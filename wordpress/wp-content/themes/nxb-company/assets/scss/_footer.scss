@@ -1,0 +1,53 @@
+/*
+ * Footer
+ */
+
+footer {
+
+  background-color: $gray-600;
+  color: $white;
+
+  .footer-center {
+    text-align: center;
+  }
+  .footer {
+    &-logo {
+      text-align: center;
+      width: auto;
+      height: 80px;
+    }
+    &-nav {
+      &-content {
+        .menu-item {
+          list-style: none;
+          a{
+            &:hover{
+              color: $yellow;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .nav {
+    position: relative;
+    float: left;
+    left: 50%;
+    margin: 0 auto;
+    padding: 0;
+    li {
+      position: relative;
+      float: left;
+      right: 50%;
+      margin-right: 10px;
+      padding: 5px 10px;
+      list-style: none;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+}

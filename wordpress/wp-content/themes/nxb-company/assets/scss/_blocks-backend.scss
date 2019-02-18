@@ -1,0 +1,100 @@
+
+%backed-block-outline {
+    padding: 15px 10px 10px 10px;
+    outline: dashed rgba(0, 0, 0, 0.2) 2px;
+}
+
+@mixin backed-block-label($title) {
+    &:after {
+        content: $title;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 4px;
+        font-size: 10px;
+        line-height: 15px;
+        color: white;
+    }
+}
+
+.block-hero {
+    @extend %backed-block-outline;
+    @include backed-block-label("Hero");
+    &-textcontainer {
+        padding: 0;
+        h1, .subhead {
+            color: $black !important;
+        }
+    }
+}
+
+.block-section {
+    @extend %backed-block-outline;
+    @include backed-block-label("Section");
+}
+
+.block-columns-1-1 {
+    @extend %backed-block-outline;
+    @include backed-block-label("Column 1:1");
+}
+
+.block-columns-1-2 {
+    @extend %backed-block-outline;
+    @include backed-block-label("Column 1:2");
+}
+
+.block-column {
+    @extend %backed-block-outline;
+}
+
+
+.block-accordion {
+    @extend %backed-block-outline;
+    @include backed-block-label("Accordion");
+}
+
+
+.block-gray-box {
+    @extend %backed-block-outline;
+    @include backed-block-label("Gray box");
+
+    &-content-left, &-content-right {
+        @extend %backed-block-outline;
+    }
+
+}
+
+.block-calendar-content {
+    @extend %backed-block-outline;
+    @include backed-block-label("Calendar content");
+}
+
+
+.block-image-card {
+    &-emblem {
+        top: initial;
+        left: initial;
+        position: relative;
+        text-align: left;
+        padding: 0.5rem;
+        height: auto;
+    }
+    &-content {
+        padding: 1rem;
+    }
+}
+
+.block-anchor {
+    @extend %backed-block-outline;
+    @include backed-block-label("Anchor");
+}
+
+
+
+.bg-page {
+    background-color: rgb(170, 170, 170);
+}
+
+

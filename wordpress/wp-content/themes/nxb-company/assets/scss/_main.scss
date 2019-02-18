@@ -1,0 +1,27 @@
+/*
+ * MAIN
+ */
+
+
+
+.aside-subnav {
+
+    list-style: none;
+    padding: 0;
+
+
+    .nav-item {
+        text-transform: uppercase;
+
+        .sub-menu {
+            list-style: none;
+            padding: 0;
+
+            .nav-item {
+                text-transform: none;
+            }
+
+        }
+    }
+
+}

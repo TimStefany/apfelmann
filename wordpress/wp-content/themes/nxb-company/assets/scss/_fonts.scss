@@ -1,0 +1,22 @@
+/**
+ * Google fonts
+ */
+//@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700');
+
+/**
+ * Fontawesome
+ */
+$fa-font-path: "../assets/fonts/fontawesome";
+@import "vendor/fontawesome/fontawesome";
+@import "vendor/fontawesome/regular";
+@import "vendor/fontawesome/brands";
+
+
+/**
+ * Local fonts
+ */
+$fonts-dir: "../assets/fonts/";
+@include font-face("Fira Sans Web", $fonts-dir + "firasans/FiraSans-Regular", 400, null, eot woff2 woff ttf);
+@include font-face("Fira Sans Web", $fonts-dir + "firasans/FiraSans-Italic", 400, italic, eot woff2 woff ttf);
+@include font-face("Fira Sans Web", $fonts-dir + "firasans/FiraSans-Bold", 700, null, eot woff2 woff ttf);
+@include font-face("Fira Sans Web", $fonts-dir + "firasans/FiraSans-BoldItalic", 700, italic, eot woff2 woff ttf);

@@ -1,0 +1,27 @@
+.block-contact {
+  .card {
+    border: 0 solid;
+    border-radius: 0 0 0 0;
+    &-header {
+      border-radius: 0 0 0 0 !important;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 0 solid;
+      padding: .75rem 1.25rem;
+
+    }
+    &-body {
+      padding: 1.25rem;
+      a {
+        color: #000;
+      }
+    }
+  }
+  &-logo {
+    margin-right: 1rem;
+    margin-bottom: 0;
+    font-family: "Futura LT Web", Verdana, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}

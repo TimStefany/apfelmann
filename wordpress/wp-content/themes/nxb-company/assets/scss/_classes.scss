@@ -1,0 +1,60 @@
+.block-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.block-padding-small {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.bg-gray {
+    background-color: $gray-100 !important;
+}
+
+.bg-dark-gray {
+    background-color: $gray-300 !important;
+}
+
+.bg-gradient-gray {
+    background-color: linear-gradient(90deg, $gray-500, $gray-300, $gray-500);
+}
+
+.subhead, .suphead {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.text-small {
+    font-size: 70%;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.bg-dark {
+    color: $white;
+    a {
+        color: lighten($primary, 50%);
+    }
+}
+
+.text-gray {
+    color: $gray-600 !important;
+}
+
+.text-lightgray {
+    color: $gray-500;
+}
+
+.bg-primary {
+    background-color: $yellow;
+    color: $inverted-text;
+    a {
+        color: lighten($inverted-text, 50%);
+    }
+}
+

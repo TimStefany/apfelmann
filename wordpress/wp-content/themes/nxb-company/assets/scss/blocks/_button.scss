@@ -1,0 +1,33 @@
+
+.block-button {
+
+    position: relative;
+
+    display: inline-block;
+    padding: 0.7rem 5rem 0.7rem 1.1rem;
+    cursor: pointer;
+
+    background-color: $primary;
+    color: $white;
+
+    border-radius: 0.5rem;
+    font-weight: bold;
+
+    transition: opacity 300ms;
+
+    &:hover {
+        color: $white;
+        //color: darken($white, 10%);
+        background-color: darken($primary, 10%);
+    }
+
+
+    &.disabled {
+        cursor: initial;
+        opacity: 0.4;
+    }
+
+    &.block-button-full {
+        width: 100%;
+    }
+}

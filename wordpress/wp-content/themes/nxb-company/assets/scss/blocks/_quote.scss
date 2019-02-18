@@ -1,0 +1,18 @@
+.block-quote {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  &-content {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    text-align: center;
+    font-weight: 300;
+  }
+  &-author {
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: small;
+    color: white;
+    font-family: $font-family-sans-serif;
+    text-align: center;
+  }
+}

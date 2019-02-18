@@ -1,0 +1,62 @@
+
+.block-hero {
+    position: relative;
+
+    .block-hero-bgimg {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &.text-shadow:before {
+        content: "";
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba($gray, 0.0) 60%, rgba($gray, 0.9) 90%);
+    }
+
+    &-textcontainer {
+        position: relative;
+        padding-top: 25rem;
+        padding-bottom: 0.5rem;
+        z-index: 30;
+
+        &.text-invert {
+            h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+                color: white;
+                background: transparent;
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: $white;
+            }
+            .subhead {
+                color: $white;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            padding-top: 19rem;
+        }
+
+        h1, h2, h3 {
+            font-size: 2.2rem;
+            line-height: 2.4rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .subhead {
+            font-weight: $font-weight-light;
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            line-height: 2.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+    }
+}

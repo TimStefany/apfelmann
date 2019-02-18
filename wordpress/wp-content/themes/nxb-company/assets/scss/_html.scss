@@ -1,0 +1,26 @@
+
+html {
+    font-size: $font-size-base;
+}
+
+body {
+    position: relative;
+}
+
+h2, .h2, h3, .h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    .block {
+        img {
+            width: 100%;
+        }
+    }
+
+}

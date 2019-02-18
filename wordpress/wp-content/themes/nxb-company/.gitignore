@@ -1,0 +1,16 @@
+
+
+# Node.js
+/node_modules/
+
+# Mac OS X
+.DS_Store
+.Trashes
+Thumbs.db
+
+# IDEs
+.idea/
+
+# Others
+composer.phar
+
